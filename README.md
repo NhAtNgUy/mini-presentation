@@ -2,5 +2,5 @@
 ## this is the image
 
 <html>
-<img='me2.jpg'>
+<img src="me2.jpg" alt="Nhat-Nguyen-Picture"  height=600px class="img">
 </html>
