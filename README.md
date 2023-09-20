@@ -1,4 +1,6 @@
 # mini-presentation
 ## this is the image
 
-![] (image/me2.jpg)
+<html>
+<img='me2.jpg'>
+</html>
