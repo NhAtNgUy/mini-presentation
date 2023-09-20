@@ -1,3 +1,4 @@
 # mini-presentation
 ## this is the image
-![](images/me2.jpg)
+
+![] (image/me2.jpg)
