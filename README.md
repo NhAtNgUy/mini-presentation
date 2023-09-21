@@ -1,468 +1,280 @@
-html>
+<html>
 <head>
-  <title>Pham Cuong</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #FAF0E4;
-      margin: 0;
-      padding: 0;
-      animation: colorChange 10s infinite;
-      background-image: url("99.png");
-      background-repeat: repeat;
-    }
-    h1, h2, h3 {
-  position: relative;
-  padding: 10px 20px;
-  background-color: #6cc5c1;
-  color: #fff;
-  border-radius: 5px;
-  margin: 20px 0;
-  animation: titleAnimation 1s ease-in-out infinite;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  font-family: sans-serif;
-  font-weight: sans-serif;
+<title>mini-presentation</title>
+<meta name="viewport" content="initial-scale:1.0;width=device-width">
+<style>
+.bangtrencung {
+    width: 97.7%;
+    text-align: center;
+    padding: 15px;
+    font-family: Bernard MT Condensed;
+    font-size: 30px;
+    opacity: initial;
+}
+.img {
+    box-shadow: 0px 10px 12px 0px black;
+    width: 100%;
+}
+table , tr , td {
+    border: 2px solid black;
+    text-align: center;
+    font-family:Bernard MT Condensed ;
+    font-size: larger;
+    text-align: center;
+    margin: 40px auto;
+    border-collapse: collapse;
+
+}
+td {
+    transition: all 0.3s ease-out;
+}
+td:hover {background-color:chartreuse;transform: scale(1.1);}
+h1 {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    background-color: rgb(64, 163, 163);
 }
 
-
-    /* Header styles */
-    .header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    .header h1 {
-      font-size: 48px;
-      position: relative;
-      animation: textAnimation 3s ease-in-out infinite;
-    }
-
-    .header h1::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background-color: #fff;
-      animation: lineAnimation 3s ease-in-out infinite;
-    }
-
-    .about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  animation: fadeInUp 1s ease-in-out;
+.div1 {
+    animation-name:nguyen1 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes nguyen1 {
+    from {background-color:aquamarine}
+    to {background-color:rgb(212, 51, 83)}
 }
 
-.about-content {
-  margin-top: 20px;
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+#Grad {
+    background-image:linear-gradient(to right ,rgba(9, 214, 170, 0.938) , rgb(255, 248, 238));
 }
 
-.about-content img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.bangp2 {
+    margin: 0 auto;
+    border: 2px solid black;
+    text-align: center;
+    width: 650px;
+    height: 150px;
+    overflow: auto;
+    background-color:antiquewhite ;
+    font-family:Bernard MT Condensed ;
+    font-size:larger;
+    z-index: 1;
 }
-
-.about-content p {
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  max-width: 800px;
-}
-.about-me .social-links {
-  margin-top: 20px;
-}
-
-.about-me .social-links a {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.about-me .social-links img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s ease;
-}
-
-.about-me .social-links img:hover {
-  transform: scale(1.2);
-}
-.about-me {
-  background-color: #e2dbdb;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.about-me h2 {
-  color: #ebebeb;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.about-me-content {
-  display: none;
-  margin-top: 10px;
-}
-
-
-    .skills {
-      padding: 50px;
-      text-align: center;
-      animation: fadeInUp 1s ease-in-out;
-      display: flex;
-  flex-direction: column;
-  align-items: center;
+.body1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .iloveyou{
+    font-family: "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#f2f2f2;
+  }
  
-    }
-    .skills table {
-      border-collapse: separate;
-      border-spacing: 10px;
-      animation: tableAnimation 1s ease-in-out;
-    }
-
-    .skills th, .skills td {
-      padding: 10px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    }
-
-    .skills th:hover, .skills td:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-    
-
-    table {
-      margin: auto;
-      width: 80%;
-      border-collapse: collapse;
-    }
-
-    th, td {
-      padding: 10px;
-    }
-
-    th {
-      background-color: #333;
-      color: #fff;
-    }
-
-    .photo-gallery {
-      padding: 50px;
-      display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-    }
-
-    .photo-gallery img {
-      display: inline-block;
-      max-width: 25%;
-      margin: 10px;
-      opacity: 1;
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-      transform: scale(1);
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    }
-
-    .photo-gallery img:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .contact {
-      padding: 50px;
-      text-align: center;
-      animation: fadeInUp 1s ease-in-out;
-      display: flex;
-  flex-direction: column;
-  align-items: center;
-
-    }
-
-    .contact a {
-      color: #333;
-      text-decoration: none;
-    }
-    
-    .video {
-      position: relative;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .video-container {
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      position: relative;
-    }
-
-    .video-container video {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-
-
-
-
-
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeInLeft {
-      0% {
-        opacity: 0;
-        transform: translateX(-20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes colorChange {
-      0% {
-        background-color: #FAF0E4;
-      }
-      50% {
-        background-color: #E4FAF0;
-      }
-      100% {
-        background-color: #FAF0E4;
-      }
-    }
-    @keyframes textAnimation {
-      0%, 100% {
-        color: #fff;
-        text-shadow: none;
-      }
-      50% {
-        color: #ffcc00;
-        text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
-      }
-    }
-
-    @keyframes lineAnimation {
-      0%, 100% {
-        width: 0;
-      }
-      50% {
-        width: 100%;
-      }
-    }
-    @keyframes tableAnimation {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    @keyframes tableAnimation {
-      0% {
-        opacity: 0;
-        transform: scale(0.9);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-    .contact {
-  padding: 50px;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-.contact-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 600px;
-  margin: 0 auto;
-  animation: fadeInUp 1s ease-in-out;
-}
-
-.contact-form .form-group {
-  flex-basis: 100%;
-  margin-bottom: 20px;
-}
-
-.contact-form .form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #333;
-}
-
-.contact-form .form-group input,
-.contact-form .form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-bottom: 2px solid #ccc;
-  background-color: transparent;
-  transition: border-color 0.3s ease-in-out;
-  font-family: Arial, sans-serif;
-}
-
-.contact-form .form-group input:focus,
-.contact-form .form-group textarea:focus {
-  outline: none;
-  border-color: #555;
-}
-
-.contact-form .form-group textarea {
-  resize: vertical;
-}
-
-.contact-form .form-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  font-family: sans-serif;
-}
-
-.contact-form .form-button:hover {
-  background-color: #555;
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
+  .iloveyou span {
+    display: inline;
+    margin: 10px;
+    transition: 0.3s ease-out;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+ 
+.div2 {
+    animation-name:nhatnguyen1 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
-@keyframes titleAnimation {
-      0%, 100% {
-        transform: translateX(0);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      }
-      50% {
-        transform: translateX(10px);
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-      }
-    }
+@keyframes nhatnguyen1 {
+    from {color: white;}
+    to {color: #cf5123;}
+}
 
+#div3 {
+    animation-name: nguyen2;
+    animation: nguyen2 3s infinite;
+    transition: all 0.3s ease-out;
+}
+@keyframes nguyen2 {
+    30% {margin-left: 30px;}
+}
+.img1 {
+    transition : all 0.3s ease-out ; 
+}
+.img1:hover {transform: scale(1.1);}
 
+.layout_card { 
+    max-width: 960px;  
+    padding: 40px;
+    margin: 0 auto;
+}
+.Column_card {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+.Card { 
+    background-color:#f2f2f2;
+    border-radius: 6px;
+    padding: 40px;
+    box-shadow: 0px 8px 8px 0px rgb(49, 49, 49) ;
+    transition: all 0.3s ease-out;
+}
+.img_end {
+    transition: all 0.3s ease-out;
+}
+.Card:hover {transform:scale(1.2) ;}
+.img_end:hover {transform: scale(1.25);}
 
+.button { 
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color:rgba(255, 127, 80, 0.651) ;
+    font-family:Bernard MT Condensed ;
+    font-size: larger;
+    transition:all 0.3s ease-out ;
+    box-shadow: 0px 7px 7px 0px rgb(37, 37, 37) ;
+    margin-left: 40%;
+}
+.preButton {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color:rgba(255, 127, 80, 0.651) ;
+    font-family:Bernard MT Condensed ;
+    font-size: larger;
+    transition:all 0.3s ease-out ;
+    box-shadow: 0px 7px 7px 0px rgb(37, 37, 37) ;
+}
 
-  </style>
+.button:hover {transform: scale(1.1);}
+.preButton:hover {transform: scale(1.1);}
+
+.div4 {
+    animation-name: nn;
+    animation-duration:3s ;
+    animation-iteration-count:infinite;
+}
+@keyframes nn { 
+    from {background-color:darkorchid;}
+    to {background-color:chartreuse;}
+}
+ul {
+    top:0;
+    position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden ;
+    background-color: rgba(9, 214, 170, 0.938) ;
+    border: 2px solid black;
+    z-index: 2;
+}
+li {
+    float: left;
+}
+li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    color: aliceblue;
+    transition: all 0.3s ease-out;
+    font-size: larger;
+    font-family: Bernard MT Condensed;
+}
+li a:hover {background-color: rgb(142, 101, 180)}
+
+.img_giua {
+    margin: 40px auto;
+}
+</style>
 </head>
+
 <body>
-  <header class="header">
-    <h1 class="animated fadeIn">Welcome to my page</h1>
-  </header>
+ <div class="bangtrencung" , id="Grad">
+    <p id="Home">Welcome teacher to our website</p>
+ </div>
+ 
+    <ul >
+        <li><a href="#Home">Introduction</a></li>
+        <li><a href="#Overview">Pie Chart</a></li>
+        <li><a href="#Hoc_van">Scatter Plot</a></li>
+        <li><a href="#4">Bar Chart</a></li>
+        <li><a href="#5">Histogram</a></li>
+        
+    </ul>
 
-  <section class="about-me">
-  <h2>About Me</h2>
-    <div class="about-content">
-      <img src="2.jpg" alt="Your Image" class="animated fadeInLeft">
-      <p>Hello everyone, I'm PhamCuong. Currently, I am a second-year student at the School of Business (HSB), National University of Hanoi. I have a strong passion for the Chinese language, and after graduation, I plan to go to China. In addition, I also enjoy reading books and playing chess. That's a little bit of information about myself. Thank you for visiting my page!</p>
-      <div class="social-links">
-        <a href="https://www.facebook.com/profile.php?id=100048433724676" target="_blank"><img src="Facebook.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/pham__cuong22/" target="_blank"><img src="Ins.jpeg" alt="Instagram"></a>
-      </div>
+
+<div><h1 id="div3" style="font-family:Bernard MT Condensed;border-radius: 16px;box-shadow: 2px 7px 7px 0px black">1.Introduction </h1></div>
+<p style="font-family:sans-serif;font-size: 30px ;" id="animation">Hello everyone, this is our website we want to share today. 
+    Firstly ,we spent time finding the dataset on the Kaggle.com and it is about the statistics of the Premier League .Ultimately, let try out my product ^^</p>
+
+<center><img src="d478e5437effaba1f2ee.jpg" class="img_end" alt="me" width=800px height=650px></center>
+
+<h id="Overview"></h>
+<br>
+<br>
+<br>
+<br>
+<div id="div3"><h1 style="font-family:Bernard MT Condensed;border-radius: 16px;box-shadow: 2px 12px 10px 0px black;">2.Pie Chart </h1></div>
+<p style="font-family:sans-serif;font-size: 30px ;">On this chart, Duc Binh will share some information that they include top 6 team with most total of goals</p>
+<center><img src="c43d1051d0ed05b35cfc.jpg" class="img_end" alt="me" width=800px height=450px></center>
+
+<br>
+<br>
+<br>
+
+<div class="body1">
+    <div class="iloveyou div2">
+        <span>M</span>
+        <span>I</span>
+        <span>N</span>
+        <span>I</span>
+        <span>-</span>
+        <span>P</span>
+        <span>R</span>
+        <span>E</span>
+        <span>S</span>
+        <span>E</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>T</span>
+        <span>I</span>
+        <span>O</span>
+        <span>N</span>
     </div>
-  </section>
-  
+</div>
+<h id="Hoc_van"></h>
+<br>
+<br>
+<br>
+<br>
+<div id="div3"><h1 id="Hoc_van" style="font-family:Bernard MT Condensed;border-radius: 16px;box-shadow: 2px 12px 10px 0px black;">3.Scatter Plot </h1></div>
+<p style="font-family:sans-serif;font-size: 30px ;">Welcome to Nhat Nguyen Part, hope you guys might broaden the knowledge related to the scatter plot</p>
+<center><img src="39179a1d77a1a2fffbb0.jpg" class="img_end" alt="me" width=800px height=450px></center>
+<h id="4"></h>
+<br>
+<br>
+<br>
+<br>
+<div id="div3"><h1 style="font-family:Bernard MT Condensed;border-radius: 16px;box-shadow: 2px 12px 10px 0px black;">4.Bar chart </h1></div>
+<p style="font-family:sans-serif;font-size: 30px ;">This is Huy Cuong part, which is mainly talking about the total of own goals from the big six teams of the Premier League</p>
+<center><img src="0e82daeb2157f409ad46.jpg" class="img_end" alt="me" width=800px height=450px></center>
+<h id="5"></h>
+<br>
+<br>
+<br>
+<br>
+<div id="div3"><h1 id="Hoc_van" style="font-family:Bernard MT Condensed;border-radius: 16px;box-shadow: 2px 12px 10px 0px black;">5.Histogram </h1></div>
+<p style="font-family:sans-serif;font-size: 30px ;">Hi it's Cuong again and this is also the last chart on our presentation. Check it out with this interesting chart.</p>
+<center><img src="5ffe7320649fb1c1e88e.jpg" class="img_end" alt="me" width=800px height=450px></center>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <table>
-     
-      <tr>
-        <td>Communication</td>
-        <td>I love to stand in front of a lot of people and inpire them.</td>
-      </tr>
-      <tr>
-        <td>Playing chess</td>
-        <td>i have been paticipating some of competitions to chase up my idol. He is Magnus Calsen who is the best chess champion in the world</td>
-      </tr>
-      <tr>
-        <td>Learning Chinese</td>
-        <td>Description 3</td>
-      </tr>
-    </table>
-  </section>
-
-  <section class="photo-gallery">
-    <h2>Photo Gallery</h2>
-    <div class="gallery-container">
-      <img src="68.jpg" alt="Image 1">
-      <img src="69.jpg" alt="Image 2">
-      <img src="IMG_8009.JPG" alt="Image 3">
-    </div>
-  </section>
-  
-  <section class="video">
-    <div class="video-container">
-      <video controls>
-        <source src="cuong1.mp4" type="video/mp4">
-      </video>  
-
-    
-  </section>
-
-  <section class="contact">
-    <h2>Contact</h2>
-    <form class="contact-form">
-      <div class="form-group">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" placeholder="Enter your name">
-      </div>
-      <div class="form-group">
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" placeholder="Enter your email">
-      </div>
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" placeholder="Enter your message"></textarea>
-      </div>
-      <button type="submit" class="form-button">Submit</button>
-    </form>
-  </section>
-  
-  
-  
-  
 </body>
 </html>
 
