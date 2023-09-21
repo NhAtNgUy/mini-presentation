@@ -196,9 +196,6 @@ li a:hover {background-color: rgb(142, 101, 180)}
 </head>
 
 <body>
- <div class="bangtrencung" , id="Grad">
-    <p id="Home">Welcome teacher to our website</p>
- </div>
  
     <ul >
         <li><a href="#Home">Introduction</a></li>
