@@ -243,12 +243,6 @@ li a:hover {background-color: rgb(142, 101, 180)}
         <span>S</span>
         <span>E</span>
         <span>N</span>
-        <span>T</span>
-        <span>A</span>
-        <span>T</span>
-        <span>I</span>
-        <span>O</span>
-        <span>N</span>
     </div>
 </div>
 <h id="Hoc_van"></h>
