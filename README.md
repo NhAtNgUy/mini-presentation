@@ -197,10 +197,7 @@ li a:hover {background-color: rgb(142, 101, 180)}
 </head>
 
 <body>
- <div class="bangtrencung" , id="Grad">
-    <p id="Home">Welcome teacher to our website</p>
- </div>
- 
+
     <ul >
         <li><a href="#Home">Introduction</a></li>
         <li><a href="#Overview">Pie Chart</a></li>
@@ -210,7 +207,11 @@ li a:hover {background-color: rgb(142, 101, 180)}
         
     </ul>
 
-
+<h id="Home"></h>
+<br>
+<br>
+<br>
+<br>
 <div><h1 id="div3" style="font-family:Bernard MT Condensed;border-radius: 12px;width:fit-content;box-shadow: 2px 7px 7px 0px black">1.Introduction </h1></div>
 <p style="font-family:sans-serif;font-size: 30px ;" id="animation">Hello everyone, this is our website we want to share today. 
     Firstly ,we spent time finding the dataset on the Kaggle.com and it is about the statistics of the Premier League .Ultimately, let try out my product ^^</p>
